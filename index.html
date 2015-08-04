@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="bower_components/flipclock/compiled/flipclock.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="bower_components/flipclock/compiled/flipclock.js"></script>    
+  </head>
+  <body>
+  <h1>Fit-Timer</h1>
+  <div class="timer" style="margin:2em;"></div>
+  <div class="message"></div>
+
+  <script type="text/javascript">
+    var timer;
+    
+    $(document).ready(function() {
+      
+      timer = $('.timer').FlipClock({
+            clockFace: 'HourlyCounter'
+        });
+    });
+
+  </script>
+  <div>
+    <button id="startTimer">Start Timer</button>
+  </div>
+  </body>
+</html>
