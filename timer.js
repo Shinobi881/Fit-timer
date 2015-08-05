@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
 
   // Timer created from the FlipClock library
-  var timer = $('.timer').FlipClock({
+  var timer = $('#timer').FlipClock({
           clockFace: 'HourlyCounter',
           countdown: true,
           autoStart: true
